@@ -89,8 +89,6 @@ export default {
       this.renderer.render(this.scene, this.cam);
     },
     resize() {
-      console.log(1);
-      
       let w = this.$refs.awa.offsetWidth;
       let h = this.$refs.awa.offsetHeight;
       this.cam.aspect = w / h;

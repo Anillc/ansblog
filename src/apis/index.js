@@ -64,7 +64,7 @@ export async function login(uname, pwd) {
 }
 
 export async function uploadImg(user, file) {
-    console.log(user, file);
+    alert(user, file);
     
     // let fd = new FormData();
     // fd.append("smfile", file);
