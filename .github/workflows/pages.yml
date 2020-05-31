@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           persist-credentials: false
-      - name: Build Docs
+      - name: Build
         run: |
           npm ci
           npm run build

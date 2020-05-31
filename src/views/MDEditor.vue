@@ -98,9 +98,7 @@ export default {
           e.target.files[0]
         );
         this.insertText(url);
-        console.log(url);
       } catch (e) {
-        console.log(e);
         alert(e);
       }
     },
@@ -135,7 +133,6 @@ export default {
         }
         this.$router.push("/article/" + id);
       } catch (e) {
-        console.log(e);
         alert("上传失败:" + e);
       }
       this.uploading = false;
