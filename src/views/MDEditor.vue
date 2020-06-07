@@ -121,7 +121,10 @@ export default {
             new Date().getTime()
           );
         } else {
-          id = prompt("输入文章id");
+          id = prompt("输入文章id").trim();
+          if (id === ""){
+            return;
+          }
           await apis.uploadArticle(
             this.$store.state.user,
             id,
