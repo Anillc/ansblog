@@ -1,6 +1,6 @@
 <template>
   <div ref="awa" class="awa">
-    <div ref="hana" class="hana"></div>
+    <img ref="hana" class="hana" :src="require('@/assets/sakura.png')"/>
     <p ref="title" class="title"></p>
   </div>
 </template>
@@ -131,10 +131,8 @@ export default {
   background-color: #fff;
 }
 .hana {
-  width: 20px;
-  height: 20px;
-  background-color: pink;
-  filter: blur(5px);
+  width: 15px;
+  height: 15px;
   display: none;
 }
 </style>
